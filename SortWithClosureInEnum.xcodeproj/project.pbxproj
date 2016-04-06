@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E3A876B31CB4B49F00268A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876B21CB4B49F00268A82 /* AppDelegate.swift */; };
-		E3A876B51CB4B49F00268A82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876B41CB4B49F00268A82 /* ViewController.swift */; };
 		E3A876B81CB4B49F00268A82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A876B61CB4B49F00268A82 /* Main.storyboard */; };
 		E3A876BA1CB4B49F00268A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A876B91CB4B49F00268A82 /* Assets.xcassets */; };
 		E3A876BD1CB4B49F00268A82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A876BB1CB4B49F00268A82 /* LaunchScreen.storyboard */; };
 		E3A876C81CB4B49F00268A82 /* SortWithClosureInEnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876C71CB4B49F00268A82 /* SortWithClosureInEnumTests.swift */; };
 		E3A876D31CB4B49F00268A82 /* SortWithClosureInEnumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876D21CB4B49F00268A82 /* SortWithClosureInEnumUITests.swift */; };
+		E3A876E21CB4B4FF00268A82 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876E11CB4B4FF00268A82 /* Staff.swift */; };
+		E3A876E41CB4B6E500268A82 /* StaffsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876E31CB4B6E500268A82 /* StaffsViewController.swift */; };
+		E3A876E71CB4B7D100268A82 /* StaffOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876E61CB4B7D100268A82 /* StaffOrder.swift */; };
+		E3A876EA1CB4BB8B00268A82 /* StaffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876E91CB4BB8B00268A82 /* StaffTableViewCell.swift */; };
+		E3A876EC1CB4D19000268A82 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A876EB1CB4D19000268A82 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		E3A876AF1CB4B49F00268A82 /* SortWithClosureInEnum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortWithClosureInEnum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A876B21CB4B49F00268A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3A876B41CB4B49F00268A82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3A876B71CB4B49F00268A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3A876B91CB4B49F00268A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A876BC1CB4B49F00268A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		E3A876CE1CB4B49F00268A82 /* SortWithClosureInEnumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortWithClosureInEnumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A876D21CB4B49F00268A82 /* SortWithClosureInEnumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortWithClosureInEnumUITests.swift; sourceTree = "<group>"; };
 		E3A876D41CB4B49F00268A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A876E11CB4B4FF00268A82 /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		E3A876E31CB4B6E500268A82 /* StaffsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffsViewController.swift; sourceTree = "<group>"; };
+		E3A876E61CB4B7D100268A82 /* StaffOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffOrder.swift; sourceTree = "<group>"; };
+		E3A876E91CB4BB8B00268A82 /* StaffTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaffTableViewCell.swift; sourceTree = "<group>"; };
+		E3A876EB1CB4D19000268A82 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				E3A876B21CB4B49F00268A82 /* AppDelegate.swift */,
-				E3A876B41CB4B49F00268A82 /* ViewController.swift */,
 				E3A876B61CB4B49F00268A82 /* Main.storyboard */,
+				E3A876E51CB4B7A300268A82 /* ViewControllers */,
+				E3A876E81CB4BB4D00268A82 /* Views */,
+				E3A876E01CB4B4E400268A82 /* Models */,
 				E3A876B91CB4B49F00268A82 /* Assets.xcassets */,
 				E3A876BB1CB4B49F00268A82 /* LaunchScreen.storyboard */,
 				E3A876BE1CB4B49F00268A82 /* Info.plist */,
@@ -123,6 +133,32 @@
 				E3A876D41CB4B49F00268A82 /* Info.plist */,
 			);
 			path = SortWithClosureInEnumUITests;
+			sourceTree = "<group>";
+		};
+		E3A876E01CB4B4E400268A82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3A876E11CB4B4FF00268A82 /* Staff.swift */,
+				E3A876E61CB4B7D100268A82 /* StaffOrder.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E3A876E51CB4B7A300268A82 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3A876E31CB4B6E500268A82 /* StaffsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E3A876E81CB4BB4D00268A82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3A876E91CB4BB8B00268A82 /* StaffTableViewCell.swift */,
+				E3A876EB1CB4D19000268A82 /* CustomButton.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3A876B51CB4B49F00268A82 /* ViewController.swift in Sources */,
+				E3A876E21CB4B4FF00268A82 /* Staff.swift in Sources */,
 				E3A876B31CB4B49F00268A82 /* AppDelegate.swift in Sources */,
+				E3A876EC1CB4D19000268A82 /* CustomButton.swift in Sources */,
+				E3A876E41CB4B6E500268A82 /* StaffsViewController.swift in Sources */,
+				E3A876E71CB4B7D100268A82 /* StaffOrder.swift in Sources */,
+				E3A876EA1CB4BB8B00268A82 /* StaffTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.SortWithClosureInEnum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -416,6 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.SortWithClosureInEnum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
