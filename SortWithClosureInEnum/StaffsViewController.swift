@@ -29,26 +29,23 @@ final class StaffsViewController: UIViewController {
     
     
     @IBAction func nameButtonTapped(sender: AnyObject) {
-        switch sortOrder {
-        case .Name(order: .Ascending):
+        if case .Name(order: .Ascending) = sortOrder {
             sortOrder = .Name(order: .Descending)
-        default:
+        } else {
             sortOrder = .Name(order: .Ascending)
         }
     }
     @IBAction func staffIdButtonTapped(sender: AnyObject) {
-        switch sortOrder {
-        case .StaffId(order: .Ascending):
+        if case .StaffId(order: .Ascending) = sortOrder {
             sortOrder = .StaffId(order: .Descending)
-        default:
+        } else {
             sortOrder = .StaffId(order: .Ascending)
         }
     }
     @IBAction func staffCardIdButtonTapped(sender: AnyObject) {
-        switch sortOrder {
-        case .StaffCardId(order: .Ascending):
+        if case .StaffCardId(order: .Ascending) = sortOrder {
             sortOrder = .StaffCardId(order: .Descending)
-        default:
+        } else {
             sortOrder = .StaffCardId(order: .Ascending)
         }
     }
