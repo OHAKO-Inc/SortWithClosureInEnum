@@ -22,5 +22,6 @@ class CustomButton: UIButton {
     
     private func commonInit() {
         contentHorizontalAlignment = .Left
+        adjustsImageWhenHighlighted = false
     }
 }
