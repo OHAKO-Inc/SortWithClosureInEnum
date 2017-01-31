@@ -10,8 +10,8 @@ import UIKit
 
 final class StaffsViewController: UIViewController {
 
-    private var staffs = Staff.staffs
-    private var sortOrder: StaffOrder = .None {
+    fileprivate var staffs = Staff.staffs
+    fileprivate var sortOrder: StaffOrder = .none {
         didSet {
             sortStaffs(sortOrder)
             updateButtons(sortOrder)
@@ -23,72 +23,72 @@ final class StaffsViewController: UIViewController {
     @IBOutlet weak var staffIdButton: CustomButton!
     @IBOutlet weak var staffCardIdButton: CustomButton!
     
-    private func sortStaffs(order: StaffOrder) {
+    fileprivate func sortStaffs(_ order: StaffOrder) {
         guard let isOrderedBefore = order.isOrderedBefore else {
             return
         }
-        staffs.sortInPlace(isOrderedBefore)
+        staffs.sort(by: isOrderedBefore)
         tableView.reloadData()
     }
     
-    private func updateButtons(sortOrder: StaffOrder) {
+    fileprivate func updateButtons(_ sortOrder: StaffOrder) {
         
-        nameButton.setTitle("Name", forState: .Normal)
-        staffIdButton.setTitle("Staff ID", forState: .Normal)
-        staffCardIdButton.setTitle("Staff Card ID", forState: .Normal)
+        nameButton.setTitle("Name", for: UIControlState())
+        staffIdButton.setTitle("Staff ID", for: UIControlState())
+        staffCardIdButton.setTitle("Staff Card ID", for: UIControlState())
         
         switch sortOrder {
-        case .Name(order: .Ascending):
-            nameButton.setTitle("Name ▼", forState: .Normal)
-        case .Name(order: .Descending):
-            nameButton.setTitle("Name ▲", forState: .Normal)
+        case .name(order: .ascending):
+            nameButton.setTitle("Name ▼", for: UIControlState())
+        case .name(order: .descending):
+            nameButton.setTitle("Name ▲", for: UIControlState())
 
-        case .StaffId(order: .Ascending):
-            staffIdButton.setTitle("Staff ID ▼", forState: .Normal)
-        case .StaffId(order: .Descending):
-            staffIdButton.setTitle("Staff ID ▲", forState: .Normal)
+        case .staffId(order: .ascending):
+            staffIdButton.setTitle("Staff ID ▼", for: UIControlState())
+        case .staffId(order: .descending):
+            staffIdButton.setTitle("Staff ID ▲", for: UIControlState())
 
-        case .StaffCardId(order: .Ascending):
-            staffCardIdButton.setTitle("Staff Card ID ▼", forState: .Normal)
-        case .StaffCardId(order: .Descending):
-            staffCardIdButton.setTitle("Staff Card ID ▲", forState: .Normal)
+        case .staffCardId(order: .ascending):
+            staffCardIdButton.setTitle("Staff Card ID ▼", for: UIControlState())
+        case .staffCardId(order: .descending):
+            staffCardIdButton.setTitle("Staff Card ID ▲", for: UIControlState())
             
-        case .None:
+        case .none:
             break
         }
     }
     
-    @IBAction func nameButtonTapped(sender: AnyObject) {
-        if case .Name(order: .Ascending) = sortOrder {
-            sortOrder = .Name(order: .Descending)
+    @IBAction func nameButtonTapped(_ sender: AnyObject) {
+        if case .name(order: .ascending) = sortOrder {
+            sortOrder = .name(order: .descending)
         } else {
-            sortOrder = .Name(order: .Ascending)
+            sortOrder = .name(order: .ascending)
         }
     }
-    @IBAction func staffIdButtonTapped(sender: AnyObject) {
-        if case .StaffId(order: .Ascending) = sortOrder {
-            sortOrder = .StaffId(order: .Descending)
+    @IBAction func staffIdButtonTapped(_ sender: AnyObject) {
+        if case .staffId(order: .ascending) = sortOrder {
+            sortOrder = .staffId(order: .descending)
         } else {
-            sortOrder = .StaffId(order: .Ascending)
+            sortOrder = .staffId(order: .ascending)
         }
     }
-    @IBAction func staffCardIdButtonTapped(sender: AnyObject) {
-        if case .StaffCardId(order: .Ascending) = sortOrder {
-            sortOrder = .StaffCardId(order: .Descending)
+    @IBAction func staffCardIdButtonTapped(_ sender: AnyObject) {
+        if case .staffCardId(order: .ascending) = sortOrder {
+            sortOrder = .staffCardId(order: .descending)
         } else {
-            sortOrder = .StaffCardId(order: .Ascending)
+            sortOrder = .staffCardId(order: .ascending)
         }
     }
 
 }
 
 extension StaffsViewController: UITableViewDataSource {
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return staffs.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(String(StaffTableViewCell), forIndexPath: indexPath) as! StaffTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: StaffTableViewCell.self), for: indexPath) as! StaffTableViewCell
         let staff = staffs[indexPath.row]
         cell.configure(
             name: staff.name,

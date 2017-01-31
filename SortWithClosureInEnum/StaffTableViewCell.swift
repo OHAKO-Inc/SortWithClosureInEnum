@@ -14,7 +14,7 @@ class StaffTableViewCell: UITableViewCell {
     @IBOutlet weak var staffIdLabel: UILabel!
     @IBOutlet weak var staffCardIdLabel: UILabel!
     
-    func configure(name name: String, staffId: String, staffCardId: String) {
+    func configure(name: String, staffId: String, staffCardId: String) {
         nameLabel.text = name
         staffIdLabel.text = staffId
         staffCardIdLabel.text = staffCardId

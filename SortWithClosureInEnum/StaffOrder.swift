@@ -9,36 +9,36 @@
 import Foundation
 
 enum Order {
-    case Ascending
-    case Descending
+    case ascending
+    case descending
 }
 
 enum StaffOrder {
 
-    case Name(order: Order)
-    case StaffId(order: Order)
-    case StaffCardId(order: Order)
-    case None
+    case name(order: Order)
+    case staffId(order: Order)
+    case staffCardId(order: Order)
+    case none
     
     var isOrderedBefore: ((Staff, Staff) -> Bool)? {
         
         switch self {
-        case .Name(order: .Ascending):
+        case .name(order: .ascending):
             return { $0.name < $1.name }
-        case .Name(order: .Descending):
+        case .name(order: .descending):
             return { $0.name > $1.name }
             
-        case .StaffId(order: .Ascending):
+        case .staffId(order: .ascending):
             return { $0.staffId < $1.staffId }
-        case .StaffId(order: .Descending):
+        case .staffId(order: .descending):
             return { $0.staffId > $1.staffId }
 
-        case.StaffCardId(order: .Ascending):
+        case.staffCardId(order: .ascending):
             return { $0.staffCardId < $1.staffCardId }
-        case .StaffCardId(order: .Descending):
+        case .staffCardId(order: .descending):
             return { $0.staffCardId > $1.staffCardId }
             
-        case .None:
+        case .none:
             return nil
         }
     }

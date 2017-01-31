@@ -229,13 +229,16 @@
 				TargetAttributes = {
 					E3A876AE1CB4B49F00268A82 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					E3A876C21CB4B49F00268A82 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = E3A876AE1CB4B49F00268A82;
 					};
 					E3A876CD1CB4B49F00268A82 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = E3A876AE1CB4B49F00268A82;
 					};
 				};
@@ -445,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.SortWithClosureInEnum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -457,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.SortWithClosureInEnum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
@@ -469,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.SortWithClosureInEnumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SortWithClosureInEnum.app/SortWithClosureInEnum";
 			};
 			name = Debug;
@@ -481,6 +487,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.SortWithClosureInEnumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SortWithClosureInEnum.app/SortWithClosureInEnum";
 			};
 			name = Release;
@@ -492,6 +499,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.SortWithClosureInEnumUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SortWithClosureInEnum;
 			};
 			name = Debug;
@@ -503,6 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ohako.inc.SortWithClosureInEnumUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SortWithClosureInEnum;
 			};
 			name = Release;
@@ -526,6 +535,7 @@
 				E3A876D91CB4B49F00268A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3A876DA1CB4B49F00268A82 /* Build configuration list for PBXNativeTarget "SortWithClosureInEnumTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +544,7 @@
 				E3A876DC1CB4B49F00268A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3A876DD1CB4B49F00268A82 /* Build configuration list for PBXNativeTarget "SortWithClosureInEnumUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +553,7 @@
 				E3A876DF1CB4B49F00268A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
